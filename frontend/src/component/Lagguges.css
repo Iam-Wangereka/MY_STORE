@@ -1,0 +1,280 @@
+/* Lagguges.css */
+.container {
+  width: 50%;
+  margin: 20px auto;
+  padding: 20px;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  font-size: 36px;
+  color: rgb(0, 0, 97);
+}
+h2 {
+  font-size: 18px;
+  color: rgb(53, 53, 53);
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+input{
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  padding: 10px 50px;
+}
+
+.Name{
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  margin: 5px 0;
+}
+
+.wrapper-container{
+  display: flex;
+  flex-direction:column-reverse;
+  
+}
+.text-label{
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  text-align: start;
+  font-size: 14px;
+}
+
+.contact{
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.Emergency-Contact{
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+.sublabel{
+font-size: .75em;
+margin-top: 11px;
+margin-left: 2px;
+display: block;
+word-break: break-word;
+margin-left: 3px;
+
+
+}
+label {
+  margin-top: 10px;
+}
+
+.datetime-input {
+  display: flex;
+  align-items: center;
+}
+
+.datetime-input input[type="time"]{
+  padding: 10px 10px;
+  margin: 0;
+  margin-right: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+.datetime-input input[type="date"]{
+  text-align: start;
+  font-size: 16px;
+  margin-right: 20px;
+  padding: 10px 100px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+
+.toggle-switch-container {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.toggle-switch {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.toggle-switch input {
+  cursor: pointer;
+  display: none;
+}
+
+.toggle-label {
+  position: relative;
+  cursor: pointer;
+  padding: 5px 120px; /* Adjusted padding to fit the toggle switch */
+  user-select: none;
+}
+
+.toggle-label:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 45px;
+  height: 26px;
+  background-color: #ccc;
+  border-radius: 20px;
+  transition: background-color 0.3s;
+}
+
+.toggle-label:after {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  background-color: #fff;
+  border-radius: 50%;
+  left: 4px;
+  transition: transform 0.3s;
+}
+
+/* Updated styles when the radio input is checked */
+.toggle-switch input:checked + .toggle-label:before {
+  background-color: #007bff;
+}
+
+.toggle-switch input:checked + .toggle-label:after {
+  transform: translateX(20px);
+}
+
+.toggle-label input[type="text"] {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 5px;
+  margin-left: 10px;
+}
+
+textarea {
+  margin-top: 10px;
+  padding: 5px;
+  border: 1px solid #ddd;
+  border-radius: 15px;
+  width: 80%;
+  height: 100px;
+}
+
+input[type="file"] {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#luggageLocation {
+  margin-top: 10px;
+  padding: 5px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  width: 200px;
+}
+
+.submit-btn {
+  margin-left: 400px;
+  background-color: rgb(0, 153, 255);
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-size: 18px;
+  cursor: pointer;
+  margin-top: 10px;
+  width: 100px;
+}
+
+.submit-btn:hover {
+  background-color: blue;
+}
+
+li.form-line {
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+.form-line {
+  padding: 12px 10px;
+}
+
+.form-line {
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+.form-line, ul.page-section {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+.form-line {
+  padding: 12px 10px;
+  margin: 12px 4px;
+  border-radius: 3px;
+  position: relative;
+  width: 100%;
+  transition: background-color .15s;
+}
+*, *:after, *:before {
+  box-sizing: border-box;
+}
+*, :after, :before {
+  box-sizing: border-box;
+}
+user agent stylesheet
+li {
+  display: list-item;
+  text-align: -webkit-match-parent;
+}
+ul.page-section {
+  margin: 0;
+  padding: 0 38px;
+  list-style: none;
+}
+user agent stylesheet
+ul {
+  list-style-type: disc;
+}
+.form-all {
+  color: #2c3345;
+}
+.form-all {
+  font-size: 16px;
+}
+.form-all {
+  font-family: "Inter", sans-serif;
+}
+body {
+  font-family: Inter,sans-serif;
+  font-size: 16px;
+  background-color: #f3f3fe;
+  color: #2c3345;
+}
+*, *:after, *:before {
+  box-sizing: border-box;
+}
+*, :after, :before {
+  box-sizing: border-box;
+}
+*, *:after, *:before {
+  box-sizing: border-box;
+}
+*, :after, :before {
+  box-sizing: border-box;
+}
