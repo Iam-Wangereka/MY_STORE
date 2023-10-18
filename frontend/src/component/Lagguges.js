@@ -29,40 +29,40 @@ const Lagguges = () => {
         
 
         console.log(formData)
-        // fetch('http://localhost:5000/api/lagguges', {
-        //     method: 'POST',
-        //     headers: {
-        //         'Content-Type': 'application/json',
-        //     },
-        //     body: JSON.stringify(formData),
-        // })
-        //     .then((response) => response.json())
-        //     .then((data) => {
-        //         alert(data.message);
-        //         console.log(data.body);
-        //         setFormData({
-        //             first_name: '',
-        //             last_name: '',
-        //             phone_number: '',
-        //             email: '',
-        //             emergency_first_name: '',
-        //             emergency_last_name: '',
-        //             emergency_phone_number: '',
-        //             leave_date: '',
-        //             leave_time: '',
-        //             leave_time_period: 'AM',
-        //             return_date: '',
-        //             return_time: '',
-        //             return_time_period: 'AM',
-        //             luggage_type: '',
-        //             luggage_description: '',
-        //             luggage_photo: null,
-        //             luggage_location: '',
-        //         });
-        //     })
-        //     .catch((error) => {
-        //         console.error('Error:', error);
-        //     });
+        fetch('http://localhost:5000/api/lagguges', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(formData),
+        })
+            .then((response) => response.json())
+            .then((data) => {
+                alert(data.message);
+                console.log(data.body);
+                setFormData({
+                    first_name: '',
+                    last_name: '',
+                    phone_number: '',
+                    email: '',
+                    emergency_first_name: '',
+                    emergency_last_name: '',
+                    emergency_phone_number: '',
+                    leave_date: '',
+                    leave_time: '',
+                    leave_time_period: 'AM',
+                    return_date: '',
+                    return_time: '',
+                    return_time_period: 'AM',
+                    luggage_type: '',
+                    luggage_description: '',
+                    luggage_photo: null,
+                    luggage_location: '',
+                });
+            })
+            .catch((error) => {
+                console.error('Error:', error);
+            });
     };
 
     const formatDateToYYYYMMDD = (dateString) => {
