@@ -1,21 +1,22 @@
-require('dotenv').config();
 const express = require('express')
 const mysql = require('mysql2')
 const bodyParser = require('body-parser');
 const cors = require('cors')
+require('dotenv').config();
 
 const app = express()
 
 const port = process.env.PORT|| 5000
+
 
 // Middleware to parse JSON in the request body
 app.use(bodyParser.json());
 app.use(cors())
 // db connection
 const db = mysql.createPool({
-    host:process.env.HOST,
-    user: process.env.USER ,
-    password: process.env.PASSWORD ,
+    host: process.env.HOST,
+    user:  process.env.USER,
+    password: process.env.PASSWORD,
     database: process.env.DATABASE
 })
 
@@ -82,7 +83,7 @@ app.post("/api/lagguges", (req, res) => {
         luggage_photo,
         luggage_location
     ];
-console.log(sql,values)
+
     db.query(sql, values, (err, result) => {
       if (err) {
         console.error('Error inserting data: ' + err.message);
